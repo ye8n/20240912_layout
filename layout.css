@@ -1,56 +1,6 @@
 @charset "utf-8";
 
 /* setting */
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, address, cite, code,
-del, img, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-img{
-  vertical-align: top;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-
 .padding_10{padding: 10px;}
 .padding_20{padding: 20px;}
 .padding_30{padding: 30px;}
@@ -71,33 +21,40 @@ a{
 
 body{
   font-family: '나눔고딕', sans-serif;
+  width: 962px; 
+  margin: 30px auto;
+
+  background-image: url(./wood\ texture.jpg);
 }
 
 /* header */
 header{ background-color: #7D1E6A; color: #fff;}
 header .logo img{
-  width: 70px; height: 70px;
+  width: 90px; height: 90px;
+  vertical-align: top;
 }
 header .title{
   padding: 10px;
   flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
 }
 
 /* section */
 section{background-color: #F1EEE9;}
 section .top_menu{background-color: #FFCD38; color: #7D1E6A;
-padding-right: 300px;}
+}
 section .top_menu ul{
-  width: 800px;
+display: flex;
 }
 section .top_menu ul li{
-  width: 200px; height: 50px;
+  width: 100px; height: 50px;
   text-align: center;
   line-height: 50px;
   box-sizing: border-box;
 
 }
-section .top_menu ul li:hover{
+section .top_menu ul li:hover{ cursor: pointer;
   background-color: #E4010B; color: #fff;
 }
 
@@ -118,8 +75,8 @@ section .main_contents .contents figure figcaption{
   color: #bbb;
 }
 section .main_contents .contents ul{
-  padding-left: 30px;
-  width: 400px;
+  padding-left: 20px;
+  width: 300px;
 }
 section .main_contents .contents ul li:nth-child(1){
   font-weight: bold; font-size: 1.7rem;
@@ -132,6 +89,7 @@ section .main_contents .contents ul li:nth-child(3){color: #777;
 
 /* aside */
 aside{background-color: #fff;
+  width: 300px;
 
 }
 aside .hot{
@@ -146,12 +104,13 @@ height: 30px; line-height: 30px;}
 
 aside .hot li:hover{
   background-color: #E4010B; color: #fff;
+  cursor: pointer;
 }
 
 aside .address{}
 aside .address h4{ font-size: 1.7rem; color: #E4010B; font-weight: bold;
 margin: 40px 0;}
-aside .address li{ font-size: 1.5rem; font-weight: bold;
+aside .address li{ font-size: 1rem; font-weight: bold;
   padding: 10px;
 }
 
@@ -161,3 +120,5 @@ aside .address li{ font-size: 1.5rem; font-weight: bold;
 }
 
 footer p{background-color: #7D1E6A; color: #fff;}
+
+
